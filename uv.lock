@@ -1091,9 +1091,9 @@ notebooks = [
 
 [package.metadata]
 requires-dist = [
-    { name = "ipykernel", specifier = ">=7.1.0" },
-    { name = "numpy", specifier = ">=2.3.4" },
-    { name = "torch", specifier = ">=2.9.0" },
+    { name = "ipykernel", specifier = ">=7.2.0" },
+    { name = "numpy", specifier = ">=2.4.4" },
+    { name = "torch", specifier = ">=2.11.0" },
 ]
 
 [package.metadata.requires-dev]
