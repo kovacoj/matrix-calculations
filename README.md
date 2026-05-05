@@ -17,6 +17,7 @@ The core source code lives in `src/`.
 - `src/wrappers.py` implements two ways of lifting scalar functions to matrices:
   - `jordan_form_func`, for matrices already given in Jordan form,
   - `taylor_extension`, which uses PyTorch autograd to build Taylor approximations of matrix functions.
+- `src/pade.py` provides a compact scaling-and-squaring Pad\u00e9 baseline for the matrix exponential.
 - `src/power.py` contains exponentiation by squaring for integer matrix powers.
 - `src/symbolic.py` is a small symbolic differentiation experiment related to the same general theme of function manipulation.
 
@@ -34,6 +35,7 @@ The notebooks are the main showcase layer of the repository.
 ## Limitations
 
 - The Taylor-based matrix-function construction is pedagogically useful, but it is not a replacement for standard robust algorithms.
+- The Pad\u00e9 implementation is included as a standard baseline for the matrix exponential, not as a full general-purpose matrix-function framework.
 - The Jordan-form-based construction is most informative on controlled examples; it is not intended as a numerically stable black-box routine.
 - Several notebooks are exploratory and should be read as computational notes rather than polished software documentation.
 - The `optimizers/` directory is a Git submodule with its own lifecycle and tests.
