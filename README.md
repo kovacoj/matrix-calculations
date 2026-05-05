@@ -11,5 +11,5 @@ Contains differentiable [wrappers](https://github.com/kovacoj1/matrix-calculatio
 - [`notebooks/exponentiation.ipynb`](notebooks/exponentiation.ipynb): integer matrix powers and comparison with `torch.linalg.matrix_power`.
 - [`notebooks/qr.ipynb`](notebooks/qr.ipynb) and [`notebooks/householder.ipynb`](notebooks/householder.ipynb): orthogonalization experiments.
 - [`notebooks/fft.ipynb`](notebooks/fft.ipynb): a compact FFT implementation and autodiff sanity checks.
-- [`notebooks/ekf_neural_network.ipynb`](notebooks/ekf_neural_network.ipynb): EKF training of a small neural network on `sin(5x)`.
+- [`notebooks/ekf_neural_network.ipynb`](notebooks/ekf_neural_network.ipynb): comparison of EKF, LM, and Adam on `sin(5x)` with function-value and derivative supervision.
 - [`notebooks/jax.ipynb`](notebooks/jax.ipynb): exploratory JAX port of the Taylor-extension idea.
