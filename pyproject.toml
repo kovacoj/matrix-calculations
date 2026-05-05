@@ -19,3 +19,6 @@ notebooks = [
     "matplotlib>=3.10.0",
     "scipy>=1.16.0",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,26 @@
+name: Root tests
+
+on:
+  push:
+    branches:
+      - main
+      - issue-*
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: astral-sh/setup-uv@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: uv sync --locked --group dev
+
+      - name: Run root tests
+        run: uv run pytest
