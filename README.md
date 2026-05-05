@@ -28,7 +28,8 @@ The notebooks are the main showcase layer of the repository.
 - `notebooks/matrix_functions.ipynb`: matrix functions on Jordan blocks and by Taylor expansion.
 - `notebooks/linalg.ipynb`: solving a linear system through nonlinear least-squares updates using the bundled `optimizers` submodule.
 - `notebooks/exponentiation.ipynb`: integer matrix powers and comparison with `torch.linalg.matrix_power`.
-- `notebooks/qr.ipynb` and `notebooks/householder.ipynb`: orthogonalization experiments.
+- `notebooks/qr.ipynb`: stability study comparing classical Gram-Schmidt with Householder QR.
+- `notebooks/householder.ipynb`: smaller scratch notebook on Householder reflections.
 - `notebooks/fft.ipynb`: a compact FFT implementation and autodiff sanity checks.
 - `notebooks/jax.ipynb`: exploratory JAX port of the Taylor-extension idea.
 
